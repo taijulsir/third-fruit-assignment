@@ -33,6 +33,7 @@
         .font-lato{
             font-family: 'Lato', sans-serif;
         }
+        /* slider */
         .main{
             background-image: url('./images/banner1.png');
             height: 600px;
@@ -67,7 +68,7 @@
 <body class="font-lato">
     <header class="container mx-auto">
         <!-- navbar section -->
-        <nav class="flex justify-around items-center mt-12 rounded-full bg-bg-color px-10 py-9">
+        <nav class="flex justify-around items-center mt-12 rounded-full bg-bg-color  md:px-6 lg:px-10 py-9 flex-col md:flex-row lg:flex-row space-y-5 lg:space-y-0 md:space-x-0 ">
             <ul class="flex">
                 <li class="lg:pr-7 pr-4 text-white"><a href="">Home</a></li>
                 <li class="lg:pr-7 pr-4 text-white"><a href="">About Us</a></li>
@@ -78,15 +79,17 @@
                 <img src="images/logo.png" alt="">
                 <h3 class="text-4xl text-white font-bold">Fruit Burst</h3>
             </div>
-            <div class="flex items-center">
-                <input type="search" placeholder="Search here" class="rounded-full px-7 py-5">
-                <a href=""><i class="fa fa-search icon-search" style="color: #141414;"></i></a>
+            <div class="flex items-center justify-end">
+                <input type="text" placeholder="Search here" class="input focus:outline-0 h-12  lg:w-80 md:w-auto rounded-r rounded-s-3xl" />
+                <button class="btn  rounded-s -ml-3 rounded-e-3xl bg-white my-auto h-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
             </div>
         </nav>
 
         <!-- banner section -->
-        <section class="relative">
-        <div class="carousel w-full mt-14">
+        <section>
+        <div class="carousel w-full mt-14 relative">
             <!-- 1st slider -->
                 <div id="slide1" class="carousel-item relative w-full">
                     <div class="main container mx-auto flex items-center justify-center">
@@ -94,7 +97,7 @@
                             <h1 class="text-7xl text-center text-white font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
                             <p class="text-xl text-center font-medium text-white pb-8">We supply highly quality organic products</p>
                             <div class="flex items-center justify-center">
-                            <button class="px-8 py-5 text-white text-base rounded-lg bg-rose-600">shop now</button>
+                            <button class=" px-8 py-5 text-white text-base rounded-lg bg-bg-color">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -110,7 +113,7 @@
                             <h1 class="text-7xl text-center text-white font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
                             <p class="text-xl text-center font-medium text-white pb-8">We supply highly quality organic products</p>
                             <div class="flex items-center justify-center">
-                            <button class="px-8 py-5 text-white text-base rounded-lg bg-rose-600">shop now</button>
+                            <button class="px-8 py-5 text-white text-base rounded-lg bg-bg-color">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -126,7 +129,7 @@
                             <h1 class="text-7xl text-center text-white font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
                             <p class="text-xl text-center font-medium text-white pb-8">We supply highly quality organic products</p>
                             <div class="flex items-center justify-center">
-                            <button class="px-8 py-5 text-white text-base rounded-lg bg-rose-600">shop now</button>
+                            <button class="px-8 py-5 text-white text-base rounded-lg bg-bg-color">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -142,7 +145,7 @@
                             <h1 class="text-7xl text-center text-white font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
                             <p class="text-xl text-center font-medium text-white pb-8">We supply highly quality organic products</p>
                             <div class="flex items-center justify-center">
-                            <button class="px-8 py-5 text-white text-base rounded-lg bg-rose-600">shop now</button>
+                            <button class="px-8 py-5 text-white text-base rounded-lg bg-bg-color">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -155,7 +158,7 @@
             </div> 
             
         <!-- extra section -->
-        <div class="mx-80  bg-[#FFFFFF] rounded-lg flex lg:gap-[90px] px-16 py-12">
+        <div class="mx-48 bg-[#FFFFFF] rounded-lg flex lg:gap-[90px] px-16 py-8 absolute -bottom-1 ">
             <div class="flex flex-col justify-center items-center space-y-4">
                 <img src="images/fruit1.png" alt="">
                 <p class="text-base text-paragraph-text/[0.60]">Red Grape</p>
@@ -177,10 +180,10 @@
                 <p class="text-base text-paragraph-text/[0.60]">Pomegranate</p>
             </div>
         </div>
-    </section>
+        </section>
     </header>
 
-    <main class="container mx-auto">
+    <main class="container mx-auto hidden">
         <!-- deal of the day  -->
         <section class="mt-64">
             <!-- deal of the title section -->
@@ -635,7 +638,7 @@
         </section>
     </main>
     <!-- footer section -->
-    <footer class="bg-header-text mt-36">
+    <footer class="bg-header-text mt-36 hidden">
         <section class="container mx-auto py-36 ">
                 <div class="flex justify-center items-center gap-3 pb-16">
                 <img src="images/logo.png" alt="">
