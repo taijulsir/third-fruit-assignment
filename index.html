@@ -34,7 +34,7 @@
             font-family: 'Lato', sans-serif;
         }
         /* slider */
-        .main{
+        .first{
             background-image: url('./images/banner1.png');
             height: 600px;
             background-repeat: no-repeat;
@@ -49,14 +49,14 @@
             background-size: cover;
         }
         .third{
-            background-image: url('./images/banner3.png');
+            background-image: url('./images/banner3.png');          
             height: 600px;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
         }
         .fourth{
-            background-image: url('./images/banner4.png');
+            background-image: url('./images/banner4.png');         
             height: 600px;
             background-repeat: no-repeat;
             background-position: center;
@@ -66,6 +66,7 @@
 
 </head>
 <body class="font-lato">
+    <!-- header section -->
     <header class="container mx-auto">
         <!-- navbar section -->
         <nav class="flex justify-around items-center mt-12 rounded-full bg-bg-color  md:px-6 lg:px-10 py-9 flex-col md:flex-row lg:flex-row space-y-5 lg:space-y-0 md:space-x-0 ">
@@ -92,7 +93,7 @@
         <div class="carousel w-full mt-14 relative">
             <!-- 1st slider -->
                 <div id="slide1" class="carousel-item relative w-full">
-                    <div class="main container mx-auto flex items-center justify-center">
+                    <div class="first container mx-auto flex pt-20 justify-center">
                         <div>
                             <h1 class="text-7xl text-center text-white font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
                             <p class="text-xl text-center font-medium text-white pb-8">We supply highly quality organic products</p>
@@ -108,7 +109,7 @@
                 </div>
                 <!-- 2nd slider -->
                 <div id="slide2" class="carousel-item relative w-full">
-                    <div class="second container mx-auto flex items-center justify-center">
+                    <div class="second container mx-auto flex pt-20 justify-center">
                         <div>
                             <h1 class="text-7xl text-center text-white font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
                             <p class="text-xl text-center font-medium text-white pb-8">We supply highly quality organic products</p>
@@ -124,7 +125,7 @@
                 </div>
                 <!-- 3rd slider -->
                 <div id="slide3" class="carousel-item relative w-full">
-                    <div class="third container mx-auto flex items-center justify-center">
+                    <div class="third container mx-auto flex pt-20 justify-center">
                         <div>
                             <h1 class="text-7xl text-center text-white font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
                             <p class="text-xl text-center font-medium text-white pb-8">We supply highly quality organic products</p>
@@ -140,7 +141,7 @@
                 </div>
                 <!-- 4th slider -->
                 <div id="slide4" class="carousel-item relative w-full">
-                    <div class="fourth container mx-auto flex items-center justify-center">
+                    <div class="fourth container mx-auto flex pt-20 justify-center">
                         <div>
                             <h1 class="text-7xl text-center text-white font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
                             <p class="text-xl text-center font-medium text-white pb-8">We supply highly quality organic products</p>
@@ -158,7 +159,7 @@
             </div> 
             
         <!-- extra section -->
-        <div class="mx-48 bg-[#FFFFFF] rounded-lg flex lg:gap-[90px] px-16 py-8 absolute -bottom-1 ">
+        <div class="mx-48 bg-[#FFFFFF] rounded-lg flex lg:gap-[90px] px-12 py-8 absolute -bottom-1 ">
             <div class="flex flex-col justify-center items-center space-y-4">
                 <img src="images/fruit1.png" alt="">
                 <p class="text-base text-paragraph-text/[0.60]">Red Grape</p>
@@ -554,9 +555,10 @@
                                 <img class="absolute -mt-8 ml-2" src="svg-images/group 1.svg" alt="">
                             </div>
                             <div>
-                                <h1 class="text-2xl text-header-text font-extrabold border-b-2 border-b-black ">Dedicated Team</h1>
-                                
-                                <p class="text-base text-paragraph-text/[0.60] pt-9">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <h1 class="text-2xl text-header-text font-extrabold  ">Dedicated Team</h1>
+                                <div class="border-b-2 border-b-black w-1/3">
+                                </div>            
+                                <p class="text-base text-paragraph-text/[0.60] pt-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                             </div>
                     </div>
                     <!-- 2nd left content -->
@@ -566,9 +568,10 @@
                                 <img class="absolute -mt-8 ml-2" src="svg-images/love 1.svg" alt="">
                             </div>
                             <div>
-                                <h1 class="text-2xl text-header-text font-extrabold border-b-2 border-b-black ">Fresh is Best</h1>
-                                
-                                <p class="text-base text-paragraph-text/[0.60] pt-9">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <h1 class="text-2xl text-header-text font-extrabold ">Fresh is Best</h1>
+                                <div class="border-b-2 border-b-black w-1/3">
+                                </div>
+                                <p class="text-base text-paragraph-text/[0.60] pt-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                             </div>
                     </div>
                         <!-- 3rd left content -->
@@ -578,9 +581,10 @@
                             <img class="absolute -mt-8 ml-2" src="svg-images/gift-box 1.svg" alt="">
                         </div>
                         <div>
-                            <h1 class="text-2xl text-header-text font-extrabold border-b-2 border-b-black ">Gift Certificates</h1>
-                            
-                            <p class="text-base text-paragraph-text/[0.60] pt-9">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <h1 class="text-2xl text-header-text font-extrabold  ">Gift Certificates</h1>
+                            <div class="border-b-2 border-b-black w-1/3">
+                            </div>
+                            <p class="text-base text-paragraph-text/[0.60] pt-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     
                     </div>
@@ -596,9 +600,12 @@
                      <!-- 1st right content -->
                      <div class="flex gap-6">
                             <div>
-                                <h1 class="text-2xl text-header-text font-extrabold border-b-2 border-b-black ">Integrated Supplier</h1>
-                                
-                                <p class="text-base text-paragraph-text/[0.60] pt-9">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <h1 class="text-2xl text-header-text font-extrabold text-right ">Integrated Supplier</h1>
+                                <div class="flex justify-end">
+                                    <div class="border-b-2 border-b-black w-1/3 text-right ">
+                                    </div>
+                                </div>      
+                                <p class="text-base text-paragraph-text/[0.60] text-right pt-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                             </div>
                             
                             <div class="relative" >
@@ -609,9 +616,12 @@
                     <!-- 2nd right content -->
                      <div class="flex gap-6">
                             <div>
-                                <h1 class="text-2xl text-header-text font-extrabold border-b-2 border-b-black ">Sustainable Practice</h1>
-                                
-                                <p class="text-base text-paragraph-text/[0.60] pt-9">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <h1 class="text-2xl text-header-text font-extrabold text-right ">Sustainable Practice</h1>
+                                <div class="flex justify-end">
+                                    <div class="border-b-2 border-b-black w-1/3 text-right ">
+                                    </div>
+                                </div>                              
+                                <p class="text-base text-paragraph-text/[0.60] pt-5 text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                             </div>
                             
                             <div class="relative" >
@@ -622,9 +632,12 @@
                     <!-- 3rd right content -->
                      <div class="flex gap-6">
                             <div>
-                                <h1 class="text-2xl text-header-text font-extrabold border-b-2 border-b-black ">The Benefits Only</h1>
-                                
-                                <p class="text-base text-paragraph-text/[0.60] pt-9">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <h1 class="text-2xl text-header-text font-extrabold text-right">The Benefits Only</h1>
+                                <div class="flex justify-end">
+                                    <div class="border-b-2 border-b-black w-1/3 text-right ">
+                                    </div>
+                                </div>  
+                                <p class="text-base text-paragraph-text/[0.60] pt-5 text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                             </div>
                             
                             <div class="relative" >
